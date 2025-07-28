@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Fuck OSA</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="center">
+        <h1>Fuck the Online Safety Act</h1>
+        <p>Note: I'm not a web developer, hence why the website looks aweful. If you want to prettify the website, you can help <a href="https://github.com/hoshiwara/fuckosa.techhoshi.com">HERE</a></p>
+        <h2>IMPORTANT - Petition to repeal the act:</h2>
+        <p>A petition to repeal the online safety act has been created, make sure to sign it <a href="https://petition.parliament.uk/petitions/722903?reveal_response=yes">HERE</a></p>
+        <h2>The Act itself:</h2>
+        <p>
+            You can find the official information about the online safety act <a href="https://www.gov.uk/government/publications/online-safety-act-explainer/online-safety-act-explainer">HERE</a><br>
+            In summary, the act aims to protect children from 'adult' content online. It requires users of sites providing this content to send photos of their ID to a third party to verify their age. <br><br>
+            There are a number of reasons as to why the act is a bad idea, which I will detail here later, here's a summary:
+            <ul>
+                <li>The wording is vague, and captures far more than just porn. <a href="https://www.reddit.com/r/AskUK/comments/1m8tjeh/whats_the_stupidest_subreddit_youve_seen/">This reddit thread</a> summarises some affected subreddits</li>
+                <li>Some subreddits include ones which provider support for alcoholics, victims of sexual assault amoung others.</li>
+                <li>It even took down a <a href="https://www.spiked-online.com/2025/04/04/how-the-online-safety-act-shut-down-a-hamster-forum/">forum about hamsters</a> of all things.</li>
+                <li><a href="https://www.biometricupdate.com/202507/uk-high-court-hears-wikipedia-suit-against-online-safety-act-category-rules">Wikipedia</a> might be affected by the act</li>
+                <li>General Freedom of Speech + Freedom of the Internet issues</li>
+                <li>Easily Bypassed as detailed below (which may lead to other more restrictive laws like banning VPNs)</li>
+                <li>Massive security risks with 3rd party companies handling our IDs. See <a href="https://www.nbcnews.com/tech/social-media/tea-app-hacked-13000-photos-leaked-4chan-call-action-rcna221139">TEA App</a> as an example, in which users <a href="https://www.reddit.com/r/SubredditDrama/comments/1ma1cv1/the_doxxers_become_the_doxxed_dating_safety_app/">IDs and GPS Coordinates</a> got leaked.</li>
+            </ul>
+        </p>
+        <h2>VPNs</h2>
+        <p>
+            One way to bypass the OSA is to use a VPN. A VPN is a tool which makes it appear as if your internet traffic is coming from another location. Good VPNs will let you choose this location by country, so you can appear to be outside of the UK.<br>
+            This will let you access blocked content without having to provide you ID to some random company and risk the security breach that comes with that.<br>
+            IMPORTANT: While there are many VPN services out there, they are not all created equal. Most importantly, do NOT use a free VPN. This is a massive security risk in itself.<br>
+            <br>
+        </p>
+        <h3>3rd Party VPN Providers:</h3>
+        <p>
+            Here you'll have to do some of your own research, but I'll suggest a couple of providers below. Again, do not use a free VPN, the security risk isn't worth it. At that point you may as well comply with the act.<br>
+            Make sure to do some research into your selected VPN provider before you hand them your money, some are known to give your information over to governments and the like, despite being advertised for privacy.<br>
+            Here's a couple of examples I've used personally:
+            <ul>
+                <li><a href="https://nordvpn.com/">Nord VPN</a></li>
+                <li><a href="https://www.privateinternetaccess.com/">Private Internet Access</a></li>
+            </ul>
+        </p>
+        <h4>Only browser traffic:</h4>
+        <p>
+            If you only need to send your browser traffic through the VPN, then you can use the VPN providers browser extension. This will depend on whether your VPN provider has a browser extension for your particular browser.<br>
+            The 2 exmaple providers above both provider extensions for the firefox browser.<br>
+            Once installed, you can enable the VPN via the extension, just make sure to select another country. Try to select one that relatively close for the fastest speeds. France for example.<br>
+        </p>
+        <h4>All device traffic:</h4>
+        <p>
+            Sometimes you want to send all traffic from your machine over the VPN. This might be because you are using a mobile for example, which generally doesn't support browser extensions.<br>
+            It might be that you need an app like discord to go over the VPN. Discord requires age verification if you are in any server they deem to be NSFW, regardless of if you engage in that content.<br>
+            In these instances, your VPN provider hopefully supports some desktop or mobile app you can download. Just install that, launch it, and set the country.
+        </p>
+        <h3>Self-hosting VPN endpoint:</h3>
+        <p>
+            I'm not going to detail all the setup required for this here, but wanted to make a note of it for one key reason: The government will know that VPNs will bypass OSA, so may try to enact some law or amend the current act to block VPNs as well.<br>
+            If this is the case, the best thing you can do is setup a personal private VPN for your own use. Since this is private, it becomes much harder to detect and block.<br>
+            My approach to this is to setup some sort of VPS - make sure this is hosted outside of the UK. Oracle Cloud lets you run 2 low-tier vms for free which are more than enough. Once you have this setup, run some VPN application like WireGuard or OpenVPN. Both WireGuard and OpenVPN have mobile apps, as well as desktop apps. 
+        </p>
+    </div>
+  </body>
+</html>
