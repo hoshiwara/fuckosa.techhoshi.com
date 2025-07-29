@@ -26,7 +26,7 @@ github_username:  "hoshiwara"
 
 domain: "fuckosa.techhoshi.com"
 url: "https://fuckosa.techhoshi.com"
-baseurl: "/docs"
+# baseurl: "/docs"
 
 # Build settings
 theme: "jekyll-theme-midnight"
