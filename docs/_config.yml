@@ -25,7 +25,7 @@ twitter_username: "_hoshiwara"
 github_username:  "hoshiwara"
 
 domain: "fuckosa.techhoshi.com"
-url: "https://fuckosa.techhoshi.com/docs/"
+url: "https://fuckosa.techhoshi.com"
 baseurl: "/docs"
 
 # Build settings
