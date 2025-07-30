@@ -132,6 +132,8 @@ A VPN, or Virtual Private Network, is a service that creates a secure, encrypted
 
 In summary, it lets you appear to be from another location, such as another country. If appearing to be from another country, this will allow you to bypass the act.
 
+In terms of selecting a country, my initial reccomendation is Iceland, as they are reported to have the most freedom on their internet (strong data protection laws, minimal governmnet surveillance). However if you don't get good speeds on this, you'll want to select something geographically closer to home, so somewhere in Europe like France.
+
 If you want to use a VPN, make sure you use a paid for service. Do not use a free VPN and those are very sketchy to say the least, and could potentially be collecting all sorts of information about you, even passwords. 
 
 When selecting a VPN, you need to consider your use-case and what platforms you need it to support. This is a good list of VPNs:
@@ -148,7 +150,7 @@ Some easy recommendations are:
 
 I'm not going to provide full install instructions here as it changes depending on your operating system, device, vpn provider and browser, so I can never cover all scenarios. Once you've selected your VPN provider, check their documentation for how to configure it.
 
-#### Web Browser
+#### Secure your Web Browser traffic (PC/Laptop)
 
 If you only want to VPN traffic from your web browser (on desktop/laptop), so only for websites you use, then make sure your VPN provider has a browser extension for your particular browser. For example, NordVPN has an extension for both chrome and firefox at least. 
 
@@ -156,18 +158,30 @@ In this instance, you'll want to go to your browsers extension 'store' and downl
 
 With NordVPN, if you have a homelab or some domain you don't want going over the VPN, you can enable split tunneling and add your domain to it.
 
-#### Mobile
+#### Secure your Mobile Phone traffic
 
 Make sure you VPN provider supports mobile, making sure they have an iphone or android app. This will generally VPN all traffic from the phone for all apps, rather than just the browser and web traffic, though you might be able to tweak which apps are VPN'd via the VPN app settings. 
 
-#### Desktop - All programs/apps
+#### Secure your Laptop/Desktop traffic (All programs/apps)
 
 You might need to proxy all desktop apps, in which case you will need to check if the VPN provider has a desktop app for your paticular operating system. 
 
 One example of when you might need this is discord. If you are in servers with any 'adult' content, it is likely that you'll need to provide a photo of your face for age verification. As mentioned above there might be other ways to circumvent this, however if that doesn't work or is blocked in some way then you'll probably need to use the desktop VPN app to allow discord traffic to go over the VPN. Alternatively you could use the web based version of the discord app and the web browser extension, but this won't be an option for all apps. 
 In the discord example specifically, I'd actually suggest self-hosting a separate service like teamspeak, as this will be very difficult for the government to track and block, but convincing friends to migrate over will be difficult, and it also requires some technical knowledge. 
 
-#### Self-hosted
+#### Secure all traffic on your network
+
+This method requires quite a bit of technical skill, but it allows you to send all traffic from all devices on your network over a VPN, so everything appears to be in another country. Note that for mobile devices it will only work when they are connected to your network (wifi/ethernet), for protection over cellular connection you'll need a VPN provider that has a mobile app. 
+
+In this scenario, You will need some sort of edge router or firewall on your network which supports sending all WAN traffic over a VPN. I'd suggest a setup like this:
+
+Internet > ISP Router > Firewall > Your devices
+Or ditch the ISP Router if you know how and if that's supported by your ISP and internet connection type.
+
+For the firewall, I would suggest a custom device running OpenWRT, OPNSense or PFSense. These all support VPNs clients and let you send all your traffic to a remote VPN somewhere, as long as your VPN provider gives you endpoints for this use case. NordVPN does for example. 
+With one of these custom routers you also have the option of setting up a VPN server on your home network, so mobile devices over cellular can run a VPN client which connects back to your home firewall, which then sends the traffic out to the VPN server in another country. 
+
+#### Self-Hosted VPN
 
 The final option for VPN would be some sort of self-hosted VPN. This is the very technical approach and is not an option for everyone, but maybe you can ask someone technical that you trust to set one up. They likely already know about the act and maybe have something setup already, who knows. 
 
