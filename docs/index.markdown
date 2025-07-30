@@ -38,6 +38,8 @@ Here's the official list of categories that are deemed as 'adult' content in the
 - sexual exploitation  
 - terrorism 
 
+Another aspect of the act is the government wanting to outlaw end-to-end encryption on messaging apps like Signal and Whatsapp, meaning they want the ability to read private messages on these encrypted chats. 
+
 ### Issues with the act
 
 Before listing the issues with the act, here's a list of articles also detailing the issues:
@@ -119,6 +121,13 @@ Given how easy it is to circumvent the laws, it's possible that the government w
 3. Full on dystopian/orwellian/authoritarian state.
 
 This may seem dramatic, and maybe it'll never reach that point, but stopping it at this early stage is still important to make it impossible to do so.
+
+#### Outlawing of end-to-end encryption in messaging apps
+
+Part of the act aims to outlaw the use of end-to-end encryption on messaging apps like whatsapp and signal. This encryption allows users to privately message each other knowing that no-one can intercept the messages. It's likely needless to say just how bad of an idea this is. The government should never have unrestricted access to all messages, we are entitled to a level of privacy which this act will revoke. 
+[WhatsApp and Signal have teamed up against the bill](https://www.theguardian.com/technology/2023/apr/18/whatsapp-signal-unite-against-online-safety-bill-privacy-messaging-apps-safety-security-uk)
+
+> “The bill provides no explicit protection for encryption,” they say, “and if implemented as written, could empower Ofcom to try to force the proactive scanning of private messages on end-to-end encrypted communication services, nullifying the purpose of end-to-end encryption as a result and compromising the privacy of all users. “In short, the bill poses an unprecedented threat to the privacy, safety and security of every UK citizen and the people with whom they communicate around the world, while emboldening hostile governments who may seek to draft copycat laws.”
 
 ## Bypassing the act
 
